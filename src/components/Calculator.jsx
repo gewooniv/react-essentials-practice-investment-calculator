@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function Calculator() {
   const [value, setValue] = useState({
     initialInvestment: "1000",
+    annualInvestment: "10000",
   });
 
   function handleChangeInput(inputType, input) {
@@ -13,7 +14,7 @@ export default function Calculator() {
         [inputType]: input,
       };
     });
-    // console.log(value);
+    console.log(inputType, input);
   }
 
   return (
@@ -21,6 +22,12 @@ export default function Calculator() {
       <Input
         label="Initial investment"
         inputType="initialInvestment"
+        initialValue="10000"
+        onChangeInput={handleChangeInput}
+      />
+      <Input
+        label="Annual investment"
+        inputType="annualInvestment"
         initialValue="1000"
         onChangeInput={handleChangeInput}
       />
