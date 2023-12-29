@@ -1,7 +1,15 @@
-export default function Result({ annualData }) {
+export default function Result({
+  year,
+  interest,
+  valueEndOfYear,
+  annualInvestment,
+}) {
   return (
-    <ol id="result">
-      <li>Result</li>
-    </ol>
+    <li>
+      <p>{year}</p>
+      <p>{interest}</p>
+      <p>{valueEndOfYear}</p>
+      <p>{annualInvestment}</p>
+    </li>
   );
 }
