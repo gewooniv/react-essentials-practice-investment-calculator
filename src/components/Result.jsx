@@ -1,3 +1,5 @@
+import { formatter } from "../util/investment";
+
 export default function Result({
   year,
   interest,
@@ -5,11 +7,11 @@ export default function Result({
   annualInvestment,
 }) {
   return (
-    <li>
-      <div>{year}</div>
-      <div>{interest}</div>
-      <div>{valueEndOfYear}</div>
-      <div>{annualInvestment}</div>
-    </li>
+    <tr>
+      <td>{year}</td>
+      <td>{formatter.format(interest)}</td>
+      <td>{formatter.format(valueEndOfYear)}</td>
+      <td>{formatter.format(annualInvestment)}</td>
+    </tr>
   );
 }
