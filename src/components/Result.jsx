@@ -6,10 +6,10 @@ export default function Result({
 }) {
   return (
     <li>
-      <p>{year}</p>
-      <p>{interest}</p>
-      <p>{valueEndOfYear}</p>
-      <p>{annualInvestment}</p>
+      <div>{year}</div>
+      <div>{interest}</div>
+      <div>{valueEndOfYear}</div>
+      <div>{annualInvestment}</div>
     </li>
   );
 }
