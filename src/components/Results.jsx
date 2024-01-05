@@ -9,9 +9,10 @@ export default function Results({ input }) {
       <thead>
         <tr>
           <th>Year</th>
+          <th>Investment value</th>
           <th>Interest</th>
-          <th>Value End Of Year</th>
-          <th>Annual Investment</th>
+          <th>Total interest</th>
+          <th>Invested capital</th>
         </tr>
       </thead>
       <tbody>
